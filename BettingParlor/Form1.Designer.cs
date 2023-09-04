@@ -50,6 +50,7 @@
             dog2 = new PictureBox();
             dog3 = new PictureBox();
             dog4 = new PictureBox();
+            pictureBox1 = new PictureBox();
             BettingParlorGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownBucks).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownBet).BeginInit();
@@ -58,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)dog2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dog3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dog4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // BettingParlorGroup
@@ -114,11 +116,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(18, 207);
+            label1.Location = new Point(38, 205);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(46, 20);
             label1.TabIndex = 10;
-            label1.Text = "label1";
+            label1.Text = "name";
             // 
             // buttonBets
             // 
@@ -278,17 +280,30 @@
             dog4.TabIndex = 16;
             dog4.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.FinishLine;
+            pictureBox1.Location = new Point(810, 16);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(125, 275);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 17;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(942, 540);
+            Controls.Add(pictureBox1);
             Controls.Add(dog4);
             Controls.Add(dog3);
             Controls.Add(dog2);
             Controls.Add(dog1);
             Controls.Add(RaceTrackPictureBox);
             Controls.Add(BettingParlorGroup);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
             Text = "A Day at the Races";
             BettingParlorGroup.ResumeLayout(false);
@@ -300,6 +315,7 @@
             ((System.ComponentModel.ISupportInitialize)dog2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dog3).EndInit();
             ((System.ComponentModel.ISupportInitialize)dog4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -326,5 +342,6 @@
         private PictureBox dog2;
         private PictureBox dog3;
         private PictureBox dog4;
+        private PictureBox pictureBox1;
     }
 }

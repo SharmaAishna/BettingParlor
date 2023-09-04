@@ -43,7 +43,7 @@ namespace BettingParlor
             guy[1] = new Guy() { Name = "Bob", Cash = 75, MyRadioButton = radioButtonBob, MyLabel = BobBet };
             guy[2] = new Guy() { Name = "Al", Cash = 45, MyRadioButton = radioButtonAl, MyLabel = AlBet };
 
-            lblMinimumBet.Text = "Minimun Bet:" + numericUpDownBet.Minimum.ToString() + "bucks.";
+            lblMinimumBet.Text = "Minimun Bet:" + numericUpDownBet.Minimum + "bucks.";
             refreshGuyState();
         }
 
@@ -57,17 +57,17 @@ namespace BettingParlor
 
         private void radioButtonJoe_CheckedChanged(object sender, EventArgs e)
         {
-            radioButtonJoe.Text = guy[0].Name;
+            label1.Text = guy[0].Name;
         }
 
         private void radioButtonBob_CheckedChanged(object sender, EventArgs e)
         {
-            radioButtonBob.Text = guy[1].Name;
+            label1.Text = guy[1].Name;
         }
 
         private void radioButtonAl_CheckedChanged(object sender, EventArgs e)
         {
-            radioButtonAl.Text = guy[2].Name;
+            label1.Text = guy[2].Name;
         }
 
         private void buttonBets_Click(object sender, EventArgs e)
